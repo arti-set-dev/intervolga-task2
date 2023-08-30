@@ -1,0 +1,85 @@
+.form {
+  margin: auto;
+  border: 1px solid var(--black);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white);
+
+  &__head {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 25px;
+  }
+
+  &__passport {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  &__label {
+    @include mb(20px);
+
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__desc {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__legend {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.title {
+}
+
+.h1 {
+}
+
+.fieldset-reset {
+}
+
+.visually-hidden {
+}
+
+.label {
+}
+
+.input-reset {
+}
+
+.input {
+}
+
+.input--series {
+}
+
+.input--number {
+}
+
+.btn-reset {
+}
+
+.btn-black {
+}
+
+.btn-border {
+}

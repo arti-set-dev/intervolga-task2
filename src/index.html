@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <form action="mail.php" method="post" enctype="multipart/form-data" class="form form--vehicle">
+        <div class="form__head">
+          <h1 class="title h1 form__title">Транспортные средства и водители</h1>
+        </div>
+        <div class="form__content">
+          <fieldset class="fieldset-reset">
+            <legend class="visually-hidden">Данные на автомобиль</legend>
+            <label class="label form__label">
+              <span class="form__desc">Гос-номер</span>
+              <input type="text" class="input-reset input statenumber" placeholder="Укажите гос-номер" aria-label="Поле для ввода гос-номера авто" name="Гос-номер">
+            </label>
+            <label class="label form__label">
+              <span class="form__desc">Транспортное средство</span>
+              <input type="text" class="input-reset input vehicle" placeholder="Транспортное средство" aria-label="Поле для ввода модели транспортного средства" name="Транспортное средство">
+            </label>
+            <label class="label form__label">
+              <span class="form__desc">Ориентировочная дата прибытия к покупателю</span>
+              <input type="text" class="input-reset input date" placeholder="Дата*" aria-label="Поле для ввода даты" name="Ориентировочная дата прибытия к покупателю">
+            </label>
+          </fieldset>
+          <fieldset class="fieldset-reset">
+            <legend class="form__legend">Данные о водителе</legend>
+            <label class="label form__label">
+              <span class="form__desc">ФИО</span>
+              <input type="text" class="input-reset input fullname" placeholder="Укажите ФИО водителя" aria-label="Поле для ввода ФИО водителя" name="ФИО">
+            </label>
+            <fieldset class="fieldset-reset form__passport">
+              <legend class="form__desc">Паспортные данные</legend>
+              <label class="label form__label">
+                <input type="text" class="input-reset input series" placeholder="Серия" aria-label="Поле для ввода серии паспорта" name="Серия паспорта">
+              </label>
+              <label class="label form__label">
+                <input type="text" class="input-reset input number" placeholder="Номер" aria-label="Поле для ввода номера паспорта" name="Номер паспорта">
+              </label>
+            </fieldset>
+            <label class="label form__label">
+              <span class="form__desc">Кем выдан</span>
+              <input type="text" class="input-reset input text" placeholder="Кем выдан" aria-label="Кем выдан" name="Кем выдан">
+            </label>
+            <label class="label form__label">
+              <span class="form__desc">Когда выдан</span>
+              <input type="text" class="input-reset input date2" placeholder="Когда выдан" aria-label="Когда выдан" name="Когда выдан">
+            </label>
+          </fieldset>
+        </div>
+        <button type="submit" class="btn-reset btn-black">Отправить</button>
+        <button type="button" class="btn-reset btn-border btn-cancel">Отменить</button>
+      </form>
+    </main>
+    <!-- @include('partials/footer.html') -->
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>
